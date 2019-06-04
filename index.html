@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="catDogApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cat Dog App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h3> Cat or Dog </h3>
+    <p> Click on 'Cat' to see a picture of a cat. Click on 'Dog' to see a picture of a dog. </p>
+
+    <main ng-view>
+    </main>
+
+
+
+
+  <script src="https://code.angularjs.org/1.7.8/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script> <!-- dont forget to attach your ng-route -->
+  <script src="app.module.js"></script>
+  <script src="components/dog/dog.js"></script>
+  <script src="components/cat/cat.js"></script>
+  <script src="components/home/home.js"></script>
+  <script src="components/cat-dog-service.js"></script>
+  <script src="components/app.config.js"></script>
+</body>
+</html>
